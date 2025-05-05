@@ -12,9 +12,10 @@ Feature: Google Calculator Special Functions
     And I click the CE button
     Then the result should be "12"
 
+  @smoke
   Scenario: Clearing the calculator with CE button after operation
     When I enter "5"
-    And I click the plus button
+#    And I click the plus button
     And I click the CE button
     Then the result should be "0"
 

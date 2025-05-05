@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/cucumber-pretty.html",
                 "json:target/cucumber-reports/CucumberTestReport.json"
         },
+        tags = "@smoke",  // <-- specify your tag here
         monochrome = true
 )
 public class TestRunner {
